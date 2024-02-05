@@ -1,0 +1,43 @@
+function telephoneCheck(str) {
+  let arr = [];
+  let number = "";
+
+  for (let i = 0; i < str.length; i++) {
+
+    if (str[i] == "0" || str[i] == "1" || str[i] == "2" || str[i] == "3" || str[i] == "4" || str[i] == "5" || str[i] == "6" || str[i] == "7" || str[i] == "8" || str[i] == "9") {
+
+      arr.push(str[i]);
+    }
+
+  }
+  number = arr.join("")
+  console.log(number.substr(1, 3));
+
+
+  if (number.length == 10) {
+    if (number.substr(0, 3) == "555") {
+      console.log("True");
+      return true;
+    } else {
+      console.log("False");
+      return false;
+    }
+
+  } else if (number.length == 11) {
+    if (number[0] == "1") {
+      if (number.substr(1, 3) == "555") {
+        console.log("True");
+        return true;
+      } else {
+        console.log("False");
+        return false;
+      }
+    }
+  } else {
+    console.log("Wrong Telephone Number.")
+    return false;
+  }
+
+}
+
+telephoneCheck("1 555)555-5555");

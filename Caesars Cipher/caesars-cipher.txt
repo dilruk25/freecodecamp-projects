@@ -1,0 +1,98 @@
+function rot13(str) {
+  let arr = [];
+  str = str.toUpperCase();
+  console.log("Before:", str);
+
+  for (let i = 0; i < str.length; i++) {
+    arr.push(str[i]);
+  }
+
+  for (let j = 0; j < arr.length; j++) {
+    if (arr[j] == "A") {
+      arr[j] = "N";
+      continue;
+    } else if (arr[j] == "B") {
+      arr[j] = "O";
+      continue;
+    } else if (arr[j] == "C") {
+      arr[j] = "P";
+      continue;
+    } else if (arr[j] == "D") {
+      arr[j] = "Q";
+      continue;
+    } else if (arr[j] == "E") {
+      arr[j] = "R";
+      continue;
+    } else if (arr[j] == "F") {
+      arr[j] = "S";
+      continue;
+    } else if (arr[j] == "G") {
+      arr[j] = "T";
+      continue;
+    } else if (arr[j] == "H") {
+      arr[j] = "U";
+      continue;
+    } else if (arr[j] == "I") {
+      arr[j] = "V";
+      continue;
+    } else if (arr[j] == "J") {
+      arr[j] = "W";
+      continue;
+    } else if (arr[j] == "K") {
+      arr[j] = "X";
+      continue;
+    } else if (arr[j] == "L") {
+      arr[j] = "Y";
+      continue;
+    } else if (arr[j] == "M") {
+      arr[j] = "Z";
+      continue;
+    } else if (arr[j] == "N") {
+      arr[j] = "A";
+      continue;
+    } else if (arr[j] == "O") {
+      arr[j] = "B";
+      continue;
+    } else if (arr[j] == "P") {
+      arr[j] = "C";
+      continue;
+    } else if (arr[j] == "Q") {
+      arr[j] = "D";
+      continue;
+    } else if (arr[j] == "R") {
+      arr[j] = "E";
+      continue;
+    } else if (arr[j] == "S") {
+      arr[j] = "F";
+      continue;
+    } else if (arr[j] == "T") {
+      arr[j] = "G";
+      continue;
+    } else if (arr[j] == "U") {
+      arr[j] = "H";
+      continue;
+    } else if (arr[j] == "V") {
+      arr[j] = "I";
+      continue;
+    } else if (arr[j] == "W") {
+      arr[j] = "J";
+      continue;
+    } else if (arr[j] == "X") {
+      arr[j] = "K";
+      continue;
+    } else if (arr[j] == "Y") {
+      arr[j] = "L";
+      continue;
+    } else if (arr[j] == "Z") {
+      arr[j] = "M";
+      continue;
+    }
+
+  }
+  const result = arr.join("");
+  console.log("After: ", result);
+
+  return result;
+}
+
+rot13("SERR PBQR PNZC");

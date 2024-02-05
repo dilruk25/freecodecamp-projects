@@ -1,0 +1,39 @@
+function palindrome(str) {
+  //convert to str to lowercase
+  str = str.toLowerCase();
+  let arr = [];
+  let forwardArr = [];
+  let reverseArr = [];
+
+  for (var i = 0; i < str.length; i++) {
+    //Add to letters on str to arr
+    arr.push(str[i]);
+  }
+
+  for (var j of arr) {
+    if ((j != "_") && (j != "*") && (j != " ") && (j != "#") && (j != ",") && (j != ".") && (j != "-") && (j != "/") && (j != "\\") && (j != "(") && (j != ")")) {
+      forwardArr.push(j);
+    }
+  }
+
+  console.log("hhhhh", forwardArr);
+  for (var k = forwardArr.length - 1; k >= 0; k--) {
+    reverseArr.push(forwardArr[k]);
+  }
+  console.log(reverseArr);
+
+  let forward = forwardArr.join();
+  let backward = reverseArr.join();
+  console.log("Before: ", forward);
+  console.log("After: ", backward);
+
+  if (forward == backward) {
+    console.log("True");
+    return true;
+  } else {
+    console.log("False");
+    return false;
+  }
+}
+
+palindrome("0_0 (: /-\ :) 0-0");

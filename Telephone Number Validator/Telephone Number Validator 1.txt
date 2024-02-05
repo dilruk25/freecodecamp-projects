@@ -1,0 +1,23 @@
+function telephoneCheck(str) {
+  let arr = [];
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] == "0" || str[i] == "1" || str[i] == "2" || str[i] == "3" || str[i] == "4" || str[i] == "5" || str[i] == "6" || str[i] == "7" || str[i] == "8" || str[i] == "9") {
+      arr.push(str[i]);
+    }
+  }
+  const number = arr.join("");
+  console.log(number);
+  if (arr.length == 10) {
+    if(number[0,2]=="555") {
+      console.log("True");
+    }
+
+  } else if (arr.length == 11) {
+
+  } else {
+    console.log("Wrong Telephone Number.")
+  }
+  return true;
+
+}
+telephoneCheck("555-555-5555");

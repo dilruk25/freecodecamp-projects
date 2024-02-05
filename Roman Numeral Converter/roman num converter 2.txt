@@ -1,0 +1,82 @@
+function convertToRoman(num) {
+  let romanNum;
+  while (true) {
+    if (num == 1) {
+      romanNum = "I";
+      return;
+    } else if (num == 2) {
+      romanNum = "II";
+      return;
+    } else if (num == 3) {
+      romanNum = "III";
+      return;
+    } else if (num == 4) {
+      romanNum = "IV";
+      return;
+    } else if (num == 5) {
+      romanNum = "V";
+      return;
+    } else if (num == 6) {
+      romanNum = "VI";
+      return;
+    } else if (num == 7) {
+      romanNum = "VII";
+      return;
+    } else if (num == 8) {
+      romanNum = "VIII";
+      return;
+    } else if (num == 9) {
+      romanNum = "IX";
+      return;
+    } else if (num == 10) {
+      romanNum = "X";
+      return;
+    } else if (num == 40) {
+      romanNum = "XL";
+      return;
+    } else if (num == 50) {
+      romanNum = "L";
+      return;
+    } else if (num == 90) {
+      romanNum = "XC";
+      return;
+    } else if (num == 100) {
+      romanNum = "C";
+      return;
+    } else if (num == 400) {
+      romanNum = "CD";
+      return;
+    } else if (num == 500) {
+      romanNum = "D";
+      return;
+    } else if (num == 900) {
+      romanNum = "CM";
+      return;
+    } else if (num == 1000) {
+      romanNum = "M";
+      return;
+    } else {
+      //All process should be inside this else ststement
+      if (num > 10 && num < 50) {
+        let num = num - 10;
+        let temp = "X";
+        continue;
+
+      } else if (num > 50 && num < 100) {
+
+      } else if (num > 100 && num < 500) {
+
+      } else if (num > 500 && num < 1000) {
+
+      }
+
+    }
+  }
+  console.log(romanNum);
+  let final = temp + romanNum;
+  console.log(final);
+  return romanNum;
+}
+
+
+convertToRoman(11);

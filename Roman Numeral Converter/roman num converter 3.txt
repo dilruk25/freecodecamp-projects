@@ -1,0 +1,201 @@
+function convertToRoman(num) {
+  let romanNum = "";
+  let temp = "";
+  let temp2 = "";
+  let i = 0;
+
+  while (i < 5) {
+    i++;
+    if (num == 1) {
+      romanNum = "I";
+      console.log(temp2 + temp + romanNum);
+      return;
+
+    } else if (num == 2) {
+      romanNum = "II";
+      console.log(temp2 + temp + romanNum);
+      return;
+
+    } else if (num == 3) {
+      romanNum = "III";
+      console.log(temp2 + temp + romanNum);
+      return;
+
+    } else if (num == 4) {
+      romanNum = "IV";
+      console.log(temp2 + temp + romanNum);
+      return;
+
+    } else if (num == 5) {
+      romanNum = "V";
+      console.log(temp2 + temp + romanNum);
+      return;
+
+    } else if (num == 6) {
+      romanNum = "VI";
+      console.log(temp2 + temp + romanNum);
+      return;
+
+    } else if (num == 7) {
+      romanNum = "VII";
+      console.log(temp2 + temp + romanNum);
+      return;
+
+    } else if (num == 8) {
+      romanNum = "VIII";
+      console.log(temp2 + temp + romanNum);
+      return;
+
+    } else if (num == 9) {
+      romanNum = "IX";
+      console.log(temp2 + temp + romanNum);
+      return;
+
+    } else if (num == 10) {
+      romanNum = "X";
+      console.log(temp2 + temp + romanNum);
+      return;
+
+    } else if (num == 40) {
+      romanNum = "XL";
+      console.log(temp2 + temp + romanNum);
+      return;
+
+    } else if (num == 50) {
+      romanNum = "L";
+      console.log(temp2 + temp + romanNum);
+      return;
+
+    } else if (num == 90) {
+      romanNum = "XC";
+      console.log(temp2 + temp + romanNum);
+      return;
+
+    } else if (num == 100) {
+      romanNum = "C";
+      console.log(temp2 + temp + romanNum);
+      return;
+
+    } else if (num == 400) {
+      romanNum = "CD";
+      console.log(temp2 + temp + romanNum);
+      return;
+
+    } else if (num == 500) {
+      romanNum = "D";
+      console.log(temp2 + temp + romanNum);
+      return;
+
+    } else if (num == 900) {
+      romanNum = "CM";
+      console.log(temp2 + temp + romanNum);
+      return;
+
+    } else if (num == 1000) {
+      romanNum = "M";
+      console.log(temp2 + temp + romanNum);
+      return;
+
+    } else {
+      //All process should be inside this else ststement
+      if (num > 10 && num <= 20) {
+        num = num - 10;
+        temp = "X";
+        continue;
+
+      } else if (num > 20 && num <= 30) {
+        num = num - 20;
+        temp = "XX";
+        continue;
+
+      } else if (num > 30 && num <= 40) {
+        num = num - 30;
+        temp = "XXX";
+        continue;
+
+      } else if (num > 40 && num <= 50) {
+        num = num - 40;
+        temp = "XL";
+        continue;
+
+      } else if (num > 50 && num <= 60) {
+        num = num - 50;
+        temp = "L";
+        continue;
+
+      } else if (num > 60 && num <= 70) {
+        num = num - 60;
+        temp = "LX";
+        continue;
+
+      } else if (num > 70 && num <= 80) {
+        num = num - 70;
+        temp = "LXX";
+        continue;
+
+      } else if (num > 80 && num <= 90) {
+        num = num - 80;
+        temp = "LXXX";
+        continue;
+
+      } else if (num > 90 && num <= 100) {
+        num = num - 90;
+        temp = "XC";
+        continue;
+
+      } else if (num > 100 && num <= 200) {
+        num = num - 100;
+        temp2 = "C";
+        continue;
+
+      } else if (num > 200 && num <= 300) {
+        num = num - 200;
+        temp2 = "CC";
+        continue;
+
+      } else if (num > 300 && num <= 400) {
+        num = num - 300;
+        temp2 = "CCC";
+        continue;
+
+      } else if (num > 400 && num <= 500) {
+        num = num - 400;
+        temp2 = "CD";
+        continue;
+
+      } else if (num > 500 && num <= 600) {
+        num = num - 500;
+        temp2 = "D";
+        continue;
+
+      } else if (num > 600 && num <= 700) {
+        num = num - 600;
+        temp2 = "DC";
+        continue;
+
+      } else if (num > 700 && num <= 800) {
+        num = num - 700;
+        temp2 = "DCC";
+        continue;
+
+      } else if (num > 800 && num <= 900) {
+        num = num - 800;
+        temp2 = "DCCC";
+        continue;
+
+      } else if (num > 900 && num <= 1000) {
+        num = num - 900;
+        temp2 = "CM";
+        continue;
+
+      }
+    }
+
+  }
+  let final = temp2 + temp + romanNum;
+  final = final.toString();
+  return final;
+}
+
+
+convertToRoman(1000);
